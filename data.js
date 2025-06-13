@@ -100,7 +100,7 @@ window.data = {
       "title": "Erga-se",
       "episode": "Ep. 12",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/VvWmV7vP/867UFFab6d19057576e4cbd402c2829b1178b127f6e73b2c3c2c967aefa473f0.png",
+      "image": "https://i.postimg.cc/VvWmV7vP/867bffab6d19057576e4cbd402c2829b1178b127f6e73b2c3c2c967aefa473f0.png",
       "link": "https://drive.google.com/file/d/1_e_GeE1e1T7iF4XoYH0rcDtsxfxvy5eC/view?usp=drivesdk",
       "seriesId": 0
     },
@@ -283,15 +283,15 @@ window.data = {
     {
       "title": "A ser divulgado",
       "episode": "Ep. 11",
-      "duration": "duração: 25 minutos",
+      "duration": "duração": 25 minutos",
       "image": "https://i.postimg.cc/sDJhT9qB/Kijin-Gentoushou-GQCA-cp.jpg",
       "link": null,
-      "seriesId": 2
+      "seriesId": 2,
     },
     {
       "title": "A ser divulgado",
       "episode": "Ep. 12",
-      "duration": "duração: 25 minutos",
+      "duration": "duração": 25 minutos",
       "image": "https://i.postimg.cc/sDJhT9qB/Kijin-Gentoushou-GQCA-cp.jpg",
       "link": null,
       "seriesId": 2
@@ -299,56 +299,56 @@ window.data = {
     {
       "title": "Ribenji",
       "episode": "Ep. 1",
-      "duration": "duração: 27 minutos",
-      "image": "https://i.postimg.cc/bJB1X09p/image-4.jpg",
+      "duration": "duração": 27 minutos",
+      "image": "http://i.postimg.cc/bJB1X09p/image.jpg",
       "link": null,
       "seriesId": 3
     },
     {
       "title": "Yume Yomi",
       "episode": "Ep. 2",
-      "duration": "duração: 25 minutos",
-      "image": "https://i.postimg.cc/bJB1X09p/image-4.jpg",
+      "duration": "duração": 25 minutos",
+      "image": "https://i.postimg.cc/bJB1X09p/image.jpg",
       "link": null,
       "seriesId": 3
     },
     {
-      "title": "Karappo no Shichininshuu",
+      "title": "Karappo no Shichinin",
       "episode": "Ep. 3",
-      "duration": "duração: 26 minutos",
-      "image": "https://i.postimg.cc/bJB1X09p/image-4.jpg",
+      "duration": "duração": 26 minutos",
+      "image": "https://i.postimg.cc/bJB1X09p/image.jpg",
       "link": null,
       "seriesId": 3
     },
     {
       "title": "Kettou",
       "episode": "Ep. 4",
-      "duration": "duração: 27 minutos",
-      "image": "https://i.postimg.cc/bJB1X09p/image-4.jpg",
+      "duration": "duração": 27 minutos",
+      "image": "https://i.postimg.cc/bJB1X09p/image.jpg",
       "link": null,
       "seriesId": 3
     },
     {
       "title": "Jasutesu",
       "episode": "Ep. 5",
-      "duration": "duração: 26 minutos",
-      "image": "https://i.postimg.cc/bJB1X09p/image-4.jpg",
+      "duration": "duração": 26 minutos",
+      "image": "https://i.postimg.cc/bJB1X09p/image.jpg",
       "link": null,
-      "seriesId": 3
+      "seriesId": 3,
     },
     {
       "title": "Iregyurā",
       "episode": "Ep. 1",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
-      "link": null,
+      "image": "http://i.postimg.cc/QN6Kyqxz/",
+      "link": "null,
       "seriesId": 4
     },
     {
       "title": "Shakunetsu no Hikari",
       "episode": "Ep. 2",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
       "seriesId": 4
     },
@@ -356,23 +356,23 @@ window.data = {
       "title": "Kuro to Shiro",
       "episode": "Ep. 3",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Oyako no Saikai",
       "episode": "Ep. 4",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "http://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Kaitei no Kioku",
       "episode": "Ep. 5",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
       "seriesId": 4
     },
@@ -380,151 +380,151 @@ window.data = {
       "title": "Taisetsu na Hito",
       "episode": "Ep. 6",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Koufuku no Niwa",
       "episode": "Ep. 7",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "http://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Kakusei",
       "episode": "Ep. 8",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz.jpg",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
-      "title": "Outo Shinkou",
+      "title": "Outo Shika",
       "episode": "Ep. 9",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "http://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Shinkou no Yami",
       "episode": "Ep. 10",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Kami no Shisha",
       "episode": "Ep. 11",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "http://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "Shinpan",
       "episode": "Ep. 12",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/QN6Kyqxz/59ae7b430945bbdf9638b2e017897fb2.jpg",
+      "image": "https://i.postimg.cc/QN6Kyqxz/",
       "link": null,
-      "seriesId": 4
+      "seriesId": 4,
     },
     {
       "title": "O Diabo Também Chora",
       "episode": "Ep. 1",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Presa para Caçador",
       "episode": "Ep. 2",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Sem Vergonha",
       "episode": "Ep. 3",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Tudo por um Tostão",
       "episode": "Ep. 4",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "A Filha de Rock Queen",
       "episode": "Ep. 5",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
-      "title": "O Guarda-Costas de Brenda",
+      "title": "O Guarda-Costas da Brenda",
       "episode": "Ep. 6",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Aquele que Caça a Morte",
       "episode": "Ep. 7",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Uma Noite Longa",
       "episode": "Ep. 8",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "O Diabo na Faixa",
       "episode": "Ep. 9",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "O Último Voto",
       "episode": "Ep. 10",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Showtime",
       "episode": "Ep. 11",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
-      "seriesId": 5
+      "seriesId": 5,
     },
     {
       "title": "Olhos Vermelhos",
       "episode": "Ep. 12",
       "duration": "duração: 23 minutos",
-      "image": "https://i.postimg.cc/XvqnXtCK/e90119e044a451a28a14d4ced033fa6a447d5c104e8dde6ba3e578a5e308396a.jpg",
+      "image": "https://i.postimg.cc/XvqnXt.jpg",
       "link": null,
       "seriesId": 5
     },
@@ -532,263 +532,263 @@ window.data = {
       "title": "Ó Vós, Ventos do Céu",
       "episode": "Ep. 1",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp1x.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "É Por Ti",
       "episode": "Ep. 2",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "O Homem é...",
       "episode": "Ep. 3",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
-      "title": "Lamenta, Ó Coração",
+      "title": "Lamenta, Ó",
       "episode": "Ep. 4",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
-      "title": "Deixa que o Mundo Seja",
+      "title": "Deixa que o Mundo seja",
       "episode": "Ep. 5",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Como a Lua, Tão Bela",
       "episode": "Ep. 6",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Aquele que é Humano",
       "episode": "Ep. 7",
-      "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "duration": "duração:24 minutos",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Dentro da Névoa",
       "episode": "Ep. 8",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Aquele que é Chamado de Deus",
       "episode": "Ep. 9",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Como o Sangue",
       "episode": "Ep. 10",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Aquele que é Chamado de Deus (Parte 2)",
       "episode": "Ep. 11",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      "image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "A Promessa",
       "episode": "Ep. 12",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/x1hDDp1x/wp2057619.png",
+      image": "https://i.postimg.cc/x1hDDp.jpg",
       "link": null,
-      "seriesId": 6
+      "seriesId": 6,
     },
     {
       "title": "Abril",
       "episode": "Ep. 1",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Duas Pessoas",
       "episode": "Ep. 2",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Tarde de Maio",
       "episode": "Ep. 3",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Pecado",
       "episode": "Ep. 4",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Chapéu Vermelho",
       "episode": "Ep. 5",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Boneca",
       "episode": "Ep. 6",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Boneca Partida",
       "episode": "Ep. 7",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Sinal",
       "episode": "Ep. 8",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Aperto",
       "episode": "Ep. 9",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Sacrifício",
       "episode": "Ep. 10",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Culpa",
       "episode": "Ep. 11",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Nascer do Sol",
       "episode": "Ep. 12",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Another: The Other – Inga",
       "episode": "OVA",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/fRJpC4h2/another-capa.jpg",
+      "image": "https://i.postimg.cc/fRJp.jpg",
       "link": null,
-      "seriesId": 7
+      "seriesId": 7,
     },
     {
       "title": "Mono",
       "episode": "Ep. 1",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Mono",
       "episode": "Ep. 2",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Mono",
       "episode": "Ep. 3",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Mono",
       "episode": "Ep. 4",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Mono",
       "episode": "Ep. 5",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Mono",
       "episode": "Ep. 6",
       "duration": "duração: 24 minutos",
-      "image": "https://i.postimg.cc/pdTq8c1f/mono-satsuki-amamiya-header.jpg",
+      "image": "https://i.postimg.cc/pdTq8c1f.jpg",
       "link": null,
-      "seriesId": 9
+      "seriesId": 9,
     },
     {
       "title": "Naruto",
       "episode": "Ep. 1",
       "duration": "duração: 12 minutos",
-      "image": "https://i.postimg.cc/VkcD8Jbz/00-33-46-images.jpg",
+      "image": "https://i.postimg.cc/VkcD8Jbz.jpg",
       "link": null,
-      "seriesId": 10
+      "seriesId": 10,
     },
     {
       "title": "Berserk",
       "episode": "Ep. 1",
       "duration": "duração: 25 minutos",
-      "image": "https://i.postimg.cc/VkcD8Jbz/00-33-46-images.jpg",
+      "image": "https://i.postimg.cc/VkcD8Jbz.jpg",
       "link": null,
       "seriesId": 11
     }
@@ -798,8 +798,8 @@ window.data = {
       "title": "Ghost in the Shell: Arise – Border 1: Ghost Pain",
       "episode": "Filme",
       "duration": "duração: 58 minutos",
-      "image": "https://i.postimg.cc/rs4N4FmC/a84dada0d124dc292a7b831d9d2901c658d1d5ff057ddce70935f2bb6c8b4ee2.jpg",
+      "image": "https://i.postimg.cc/rs4N4FmC.jpg",
       "link": "https://drive.google.com/file/d/1FEUpt9hy2TIuVwmk1GttrvFjiTqlbzDd/view?usp=drivesdk"
     }
   ]
-}
+};
