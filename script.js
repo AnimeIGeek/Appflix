@@ -696,23 +696,3 @@ thumbs.forEach((thumb, index) => {
 
             initialize();
         });
-document.addEventListener('DOMContentLoaded', () => {
-  createCarousels();
-});
-
-function createCarousels() {
-  const container = document.getElementById('carousel-container');
-  if (!container) return;
-
-  config.series.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <img src="${item.image}" alt="${item.title}">
-      <h3>${item.title}</h3>
-      <p>${item.episode}</p>
-      <p>${item.duration}</p>
-    `;
-    container.appendChild(card);
-  });
-}
