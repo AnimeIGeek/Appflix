@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Menu and Slideshow Carousel with Auth</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=PT+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" rel="preload" as="style">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-menu">
+        <nav aria-label="Navegação principal" class="top-bar" role="navigation">
+            <div class="top-bar__section">
+                <button aria-label="Página Principal" class="top-bar__icon" id="home-icon">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button aria-label="Alternar menu" class="top-bar__icon" id="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button aria-label="Alternar tema claro/escuro" class="top-bar__icon" id="theme-toggle" title="Alternar tema">
+                    <i class="fas fa-adjust"></i>
+                </button>
+            </div>
+            <div class="top-bar__section">
+                <button aria-label="Menu de assinatura" class="top-bar__icon" id="subscription-icon">
+                    <i class="fas fa-crown"></i>
+                </button>
+                <button aria-label="Buscar" class="top-bar__icon" id="search-icon">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button aria-label="Menu de perfil" class="top-bar__icon" id="profile-icon">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+            <div id="carousel-container" class="carousel-wrapper"></div>
+        </nav>
+        <div class="search-container" id="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Pesquisar animes..." aria-label="Pesquisar animes">
+            <div class="search-results" id="search-results"></div>
+        </div>
+        <nav aria-label="Menu principal" class="menu" id="main-menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <button class="menu__link" id="home-button">
+                        <i class="fas fa-home"></i>
+                        <span class="bold-text">Página Principal</span>
+                    </button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="movies" aria-expanded="false">
+                        <i class="fas fa-film"></i>
+                        <span class="bold-text">Filmes</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="movies-submenu">
+                        <a class="menu__link submenu__link" href="#" data-movie="0" role="button">
+                            <i class="fas fa-video"></i>Ghost in the Shell: Arise – Border 1: Ghost Pain
+                        </a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="anime-list" aria-expanded="false">
+                        <i class="fas fa-list"></i>
+                        <span class="bold-text">Lista de Animes</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="anime-list-submenu">
+                        <a class="menu__link submenu__link" href="#" data-series="0" role="button">
+                            <i class="fas fa-video"></i>Solo Leveling Temporada 1
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="1" role="button">
+                            <i class="fas fa-video"></i>Super Cube
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="2" role="button">
+                            <i class="fas fa-video"></i>Kijin Gentoushou
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="3" role="button">
+                            <i class="fas fa-video"></i>Afro Samurai
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="4" role="button">
+                            <i class="fas fa-video"></i>Arifureta Shokugyou de Sekai Saikyou 2nd Season
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="5" role="button">
+                            <i class="fas fa-video"></i>Devil May Cry (2007) – Episódios Dublados
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="6" role="button">
+                            <i class="fas fa-video"></i>Blood-C
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="7" role="button">
+                            <i class="fas fa-video"></i>Another
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="8" role="button">
+                            <i class="fas fa-video"></i>Mono
+                                                    </a>
+                        <a class="menu__link submenu__link" href="#" data-series="9" role="button">
+                            <i class="fas fa-video"></i>Naruto
+                        </a>
+                                                <a class="menu__link submenu__link" href="#" data-series="9" role="button">
+                            <i class="fas fa-video"></i>Bersek
+                        </a>
+                        </a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="releases" aria-expanded="false">
+                        <i class="fas fa-fire"></i>
+                        <span class="bold-text">Lançamentos</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="releases-submenu">
+                        <a class="menu__link submenu__link" href="#" data-series="0" role="button">
+                            <i class="fas fa-bell"></i>Solo Leveling Temporada 1
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="1" role="button">
+                            <i class="fas fa-bell"></i>Super Cube
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="2" role="button">
+                            <i class="fas fa-bell"></i>Kijin Gentoushou
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="3" role="button">
+                            <i class="fas fa-bell"></i>Afro Samurai
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="4" role="button">
+                            <i class="fas fa-bell"></i>Arifureta Shokugyou de Sekai Saikyou 2nd Season
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="5" role="button">
+                            <i class="fas fa-bell"></i>Devil May Cry (2007) – Episódios Dublados
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="6" role="button">
+                            <i class="fas fa-bell"></i>Blood-C
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="7" role="button">
+                            <i class="fas fa-bell"></i>Another
+                        </a>
+                        <a class="menu__link submenu__link" href="#" data-series="8" role="button">
+                            <i class="fas fa-video"></i>Mono
+                                                    </a>
+                        <a class="menu__link submenu__link" href="#" data-series="9" role="button">
+                            <i class="fas fa-video"></i>Naruto
+                        </a>
+                                                <a class="menu__link submenu__link" href="#" data-series="9" role="button">
+                            <i class="fas fa-video"></i>Bersek
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="contact" aria-expanded="false">
+                        <i class="fas fa-envelope"></i>
+                        <span class="bold-text">Contato</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="contact-submenu">
+                        <a class="menu__link submenu__link" href="https://wa.me/55984072446" target="_blank" role="button">
+                            <i class="fab fa-whatsapp"></i>WhatsApp: (55) 98407-2446
+                        </a>
+                    </div>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="about" aria-expanded="false">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="bold-text">Sobre</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="about-submenu">
+                        <span class="submenu__text">Somos parte do Grupo Anime I Geek</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h2>Animes em Destaque</h2>
+<div id="carousel-container" class="carousel-wrapper"></div>
+        <nav aria-label="Menu de assinatura" class="menu subscription-menu" id="subscription-menu">
+            <div class="menu__content">
+                <button class="premium-button" id="premium-button">
+                    <i class="fas fa-star" style="margin-right: 8px;"></i>Seja Premium
+                </button>
+            </div>
+        </nav>
+        <nav aria-label="Menu de perfil" class="menu profile-menu" id="profile-menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <button class="menu__link" data-submenu="profile" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="bold-text">Minha Conta</span>
+                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+                    </button>
+                    <div class="submenu" id="profile-submenu">
+                        <a class="menu__link submenu__link" href="#" id="show-auth" role="button">
+                            <i class="fas fa-user-edit"></i>Perfil
+                        </a>
+                        <a class="menu__link submenu__link" href="#" role="button">
+                            <i class="fas fa-cog"></i>Configurações
+                        </a>
+                        <a class="menu__link submenu__link" href="https://chat.whatsapp.com/HF1Rbe2ObccJ8kWs3RrUZ9" target="_blank" role="button">
+                            <i class="fas fa-sign-out-alt"></i>Sair
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slideshow-container" id="slideshow-container" aria-live="polite">
+        <div class="carousel-section" id="carousel-a">
+            <div class="carousel-title">Animes em Destaque</div>
+            <div class="slides-wrapper" id="slidesWrapperA"></div>
+            <div class="thumbnails" id="thumbnailsA"></div>
+        </div>
+        <div class="carousel-section" id="carousel-b">
+            <div class="carousel-title">Adicionados Recentemente</div>
+            <div class="slides-wrapper" id="slidesWrapperB"></div>
+            <div class="thumbnails" id="thumbnailsB"></div>
+        </div>
+        <div class="carousel-section" id="carousel-c">
+            <div class="carousel-title">Recomendações</div>
+            <div class="slides-wrapper" id="slidesWrapperC"></div>
+            <div class="thumbnails" id="thumbnailsC"></div>
+        </div>
+        <div class="playlist-container">
+            <div class="playlist-title">Assistir Depois</div>
+            <div class="watch-later-list" id="watchLaterList"></div>
+        </div>
+    </div>
+    <div class="auth-container" id="auth-container">
+        <div class="auth-form" id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="E-mail" aria-label="E-mail">
+            <input type="password" id="login-password" placeholder="Senha" aria-label="Senha">
+            <button id="login-button">Entrar</button>
+            <div class="auth-toggle" id="toggle-to-register">Não tem conta? Cadastre-se</div>
+        </div>
+        <div class="auth-form" id="register-form" style="display: none;">
+            <h2>Cadastro</h2>
+            <input type="text" id="register-name" placeholder="Nome" aria-label="Nome">
+            <input type="email" id="register-email" placeholder="E-mail" aria-label="E-mail">
+            <input type="password" id="register-password" placeholder="Senha" aria-label="Senha">
+            <button id="register-button">Cadastrar</button>
+            <div class="auth-toggle" id="toggle-to-login">Já tem conta? Faça login</div>
+        </div>
+    </div>
+    <div class="notification" id="notification"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggles = {
+                'menu-icon': 'main-menu',
+                'subscription-icon': 'subscription-menu',
+                'profile-icon': 'profile-menu'
+            };
+            const premiumButton = document.getElementById('premium-button');
+            const subscriptionIcon = document.getElementById('subscription-icon');
+            const searchIcon = document.getElementById('search-icon');
+            const searchContainer = document.getElementById('search-container');
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+            const themeToggle = document.getElementById('theme-toggle');
+            const slideshowContainer = document.getElementById('slideshow-container');
+            const authContainer = document.getElementById('auth-container');
+            const notification = document.getElementById('notification');
+            const homeIcon = document.getElementById('home-icon');
+            const homeButton = document.getElementById('home-button');
+
+            if (!premiumButton || !subscriptionIcon || !searchIcon || !searchContainer || !themeToggle || !slideshowContainer || !authContainer || !notification || !homeIcon || !homeButton) {
+                console.error('Elementos essenciais não encontrados');
+                return;
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') document.body.classList.add('theme-light');
+
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                localStorage.setItem('theme', document.body.classList.contains('theme-light') ? 'light' : 'dark');
+            });
+
+            Object.entries(menuToggles).forEach(([toggleId, menuId]) => {
+                const toggle = document.getElementById(toggleId);
+                const menu = document.getElementById(menuId);
+                if (!toggle || !menu) {
+                    console.error(`Elemento ${toggleId} ou ${menuId} não encontrado`);
+                    return;
+                }
+                toggle.addEventListener('click', e => {
+                    e.stopPropagation();
+                    Object.values(menuToggles).forEach(id => {
+                        const currentMenu = document.getElementById(id);
+                        if (currentMenu && currentMenu !== menu) currentMenu.classList.remove('open');
+                    });
+                    menu.classList.toggle('open');
+                    toggle.classList.toggle('active');
+                    if (toggleId === 'subscription-icon' && !menu.classList.contains('open')) {
+                        premiumButton.classList.remove('active');
+                        subscriptionIcon.style.color = '';
+                    };
+                    if (toggleId === 'profile-icon') {
+                        searchContainer.classList.remove('open');
+                    } else {
+                        authContainer.classList.remove('active');
+                        slideshowContainer.classList.remove('hidden');
+                    }
+                });
+            });
+
+            document.querySelectorAll('[data-submenu]').forEach(button => {
+                if (!button) return;
+                button.addEventListener('click', e => {
+                    e.preventDefault();
+                    const submenuId = `${button.dataset.submenu}-submenu`;
+                    const submenu = document.getElementById(submenuId);
+                    const icon = button.querySelector('.fa-chevron-down');
+                    if (submenu) {
+                        submenu.classList.toggle('open');
+                        button.setAttribute('aria-expanded', submenu.classList.contains('open') ? 'true' : 'false');
+                        if (icon) icon.style.transform = submenu.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0)';
+                    } else console.error(`Submenu ${submenuId} não encontrado`);
+                });
+            });
+
+            document.addEventListener('click', e => {
+                if (!e.target.closest('.menu') && !e.target.closest('.top-bar__icon') && !e.target.closest('.search-container')) {
+                    Object.values(menuToggles).forEach(menuId => {
+                        const menu = document.getElementById(menuId);
+                        if (menu) menu.classList.remove('open');
+                    });
+                    document.querySelectorAll('.top-bar__icon').forEach(icon => {
+                        if (icon) icon.classList.remove('active');
+                    });
+                    premiumButton.classList.remove('active');
+                    subscriptionIcon.style.color = '';
+                    searchContainer.classList.remove('open');
+                    authContainer.classList.remove('active');
+                    slideshowContainer.classList.remove('hidden');
+                }
+            });
+
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') {
+                    Object.values(menuToggles).forEach(menuId => {
+                        const menu = document.getElementById(menuId);
+                        if (menu) menu.classList.remove('open');
+                    });
+                    document.querySelectorAll('.top-bar__icon').forEach(icon => {
+                        if (icon) icon.classList.remove('active');
+                    });
+                    premiumButton.classList.remove('active');
+                    subscriptionIcon.style.color = '';
+                    searchContainer.classList.remove('open');
+                    authContainer.classList.remove('active');
+                    slideshowContainer.classList.remove('hidden');
+                }
+            });
+
+            premiumButton.addEventListener('click', () => {
+                premiumButton.classList.add('active');
+                subscriptionIcon.style.color = 'var(--gold-color)';
+                showNotification('Assinatura premium em breve!');
+            });
+
+            searchIcon.addEventListener('click', e => {
+                e.stopPropagation();
+                searchContainer.classList.toggle('open');
+                if (searchContainer.classList.contains('open')) {
+                    searchInput.focus();
+                    Object.values(menuToggles).forEach(menuId => {
+                        const menu = document.getElementById(menuId);
+                        if (menu) menu.classList.remove('open');
+                    });
+                    document.querySelectorAll('.top-bar__icon').forEach(icon => {
+                        if (icon) icon.classList.remove('active');
+                    });
+                    searchIcon.classList.add('active');
+                    authContainer.classList.remove('active');
+                    slideshowContainer.classList.remove('hidden');
+                } else {
+                    searchIcon.classList.remove('active');
+                    searchResults.innerHTML = '';
+                }
+            });
+
+            const animeList = [
+                { title: 'Solo Leveling Temporada 1', seriesIndex: 0 },
+                { title: 'Super Cube', seriesIndex: 1 },
+                { title: 'Kijin Gentoushou', seriesIndex: 2 },
+                { title: 'Afro Samurai', seriesIndex: 3 },
+                { title: 'Arifureta Shokugyou de Sekai Saikyou 2nd Season', seriesIndex: 4 },
+                { title: 'Devil May Cry (2007) – Episódios Dublados', seriesIndex: 5 },
+                { title: 'Blood-C', seriesIndex: 6 },
+                { title: 'Another', seriesIndex: 7 },
+                { title: 'Mono', seriesIndex: 8 },
+                { title: 'Naruto', seriesIndex: 9 },
+                                { title: 'Bersek', seriesIndex: 10 },
+            ];
+
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase().trim();
+                searchResults.innerHTML = '';
+                if (query) {
+                    const results = animeList.filter(anime => anime.title.toLowerCase().includes(query));
+                    if (results.length) {
+                        results.forEach(anime => {
+                            const result = document.createElement('a');
+                            result.className = 'search-result';
+                            result.href = '#';
+                            result.innerHTML = `<i class="fas fa-video"></i>${anime.title}`;
+                       result.addEventListener('click', e => {
+  e.preventDefault();
+  state.mode = 'movie'; // força modo de exibição de episódios
+  state.currentSeriesId = anime.seriesIndex; // define qual série
+  state.carousels.A.currentSlide = 0; // reseta o slide inicial
+  createCarousels(); // reconstrói o carrossel A com os episódios
+  searchContainer.classList.remove('open');
+  searchIcon.classList.remove('active');
+  closeMainMenu();
+});
+                            searchResults.appendChild(result);
+                        });
+                    } else searchResults.innerHTML = '<div class="search-result">Nenhum resultado encontrado</div>';
+                }
+            });
+
+            function showNotification(message) {
+                notification.textContent = message;
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+
+            document.querySelectorAll('.submenu__link:not([href]):not([data-series]):not([data-movie])').forEach(link => {
+                link.addEventListener('click', e => {
+                    e.preventDefault();
+                    showNotification('Este conteúdo ainda não foi adicionado.');
+                });
+            });
+
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const loginButton = document.getElementById('login-button');
+            const registerButton = document.getElementById('register-button');
+            const toggleToRegister = document.getElementById('toggle-to-register');
+            const toggleToLogin = document.getElementById('toggle-to-login');
+            const showAuthLink = document.getElementById('show-auth');
+
+            toggleToRegister.addEventListener('click', () => {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'flex';
+            });
+
+            toggleToLogin.addEventListener('click', () => {
+                registerForm.style.display = 'none';
+                loginForm.style.display = 'flex';
+            });
+
+            loginButton.addEventListener('click', () => {
+                const email = document.getElementById('login-email').value;
+                const password = document.getElementById('login-password').value;
+                if (!email || !password) {
+                    showNotification('Por favor, preencha todos os campos.');
+                    return;
+                }
+                if (!/\S+@\S+\.\S+/.test(email)) {
+                    showNotification('E-mail inválido.');
+                    return;
+                }
+                showNotification('Login realizado com sucesso!');
+                authContainer.classList.remove('active');
+                slideshowContainer.classList.remove('hidden');
+            });
+
+            registerButton.addEventListener('click', () => {
+                const name = document.getElementById('register-name').value;
+                const email = document.getElementById('register-email').value;
+                const password = document.getElementById('register-password').value;
+                if (!name || !email || !password) {
+                    showNotification('Por favor, preencha todos os campos.');
+                    return;
+                }
+                if (!/\S+@\S+\.\S+/.test(email)) {
+                    showNotification('E-mail inválido.');
+                    return;
+                }
+                showNotification('Cadastro realizado com sucesso!');
+                authContainer.classList.remove('active');
+                slideshowContainer.classList.remove('hidden');
+            });
+
+            showAuthLink.addEventListener('click', e => {
+                e.preventDefault();
+                authContainer.classList.add('active');
+                slideshowContainer.classList.add('hidden');
+                const profileMenu = document.getElementById('profile-menu');
+                const profileIcon = document.getElementById('profile-icon');
+                if (profileMenu && profileIcon) {
+                    profileMenu.classList.remove('open');
+                    profileIcon.classList.remove('active');
+                }
+            });
+});
+    </script>
+
+    <div class="notification" id="notification"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
